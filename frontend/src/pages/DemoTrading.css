@@ -1,0 +1,214 @@
+.demo-trading-page {
+    padding: 40px;
+    background: linear-gradient(135deg, #0a1a2f 0%, #1e2a44 100%);
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Background animation */
+  .demo-trading-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 221, 235, 0.1) 0%, transparent 70%);
+    animation: pulseGlow 8s infinite ease-in-out;
+    z-index: 0;
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  
+  .demo-trading-page h1 {
+    font-size: 3rem;
+    color: #00ddeb;
+    text-align: center;
+    text-shadow: 0 0 15px rgba(0, 221, 235, 0.7);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .balance-display {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .balance {
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  }
+  
+  .coin-selector {
+    margin: 30px 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .coin-selector h3 {
+    font-size: 1.8rem;
+    color: #00ddeb;
+    text-shadow: 0 0 10px rgba(0, 221, 235, 0.5);
+    margin-bottom: 15px;
+  }
+  
+  .coin-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .coin-list button {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 221, 235, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 10px rgba(0, 221, 235, 0.2);
+  }
+  
+  .coin-list button:hover {
+    background: rgba(0, 221, 235, 0.2);
+    border-color: #00ddeb;
+  }
+  
+  .coin-list button.selected {
+    background: linear-gradient(45deg, #00ddeb, #00b4d8);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 221, 235, 0.7);
+  }
+  
+  .trade-panel {
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(0, 221, 235, 0.1);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .selected-coin {
+    font-size: 1.4rem;
+    color: #b0e0e6;
+    text-shadow: 0 0 5px rgba(176, 224, 230, 0.5);
+  }
+  
+  .trade-panel input {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    width: 100%;
+    max-width: 250px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .trade-panel input:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 221, 235, 0.7);
+    background: rgba(255, 255, 255, 0.12);
+  }
+  
+  .trade-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .trade-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .trade-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+  }
+  
+  .trade-btn:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .buy-btn {
+    background: linear-gradient(45deg, #28a745, #34c759);
+    color: #fff;
+  }
+  
+  .sell-btn {
+    background: linear-gradient(45deg, #dc3545, #ff5767);
+    color: #fff;
+  }
+  
+  .trade-history {
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .trade-history h3 {
+    font-size: 1.8rem;
+    color: #00ddeb;
+    text-shadow: 0 0 10px rgba(0, 221, 235, 0.5);
+    margin-bottom: 15px;
+  }
+  
+  .trade-history ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .trade-history li {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #ccc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .trade-history li:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }

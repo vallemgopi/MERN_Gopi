@@ -1,0 +1,674 @@
+/* Home.css */
+.home-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand {
+  color: #f0b90b;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.pulse-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #f0b90b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.pulse-btn:hover {
+  background-color: #d4a017;
+  transform: scale(1.05);
+}
+
+.pulse-icon {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #f0b90b;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: #f0b90b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #d4a017;
+}
+
+/* Coin Details */
+.coin-details {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 auto 30px;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.coin-details h3 {
+  margin-bottom: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coin-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.line-chart {
+  margin-top: 20px;
+}
+
+.line-chart h4 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Price Cards */
+.market-header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.price-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price-card .coin-logo {
+  width: 30px; /* Reduced from 40px */
+  height: 30px;
+  margin-bottom: 8px;
+}
+
+.price-card h4 {
+  margin: 8px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.price-card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price-card .price.up {
+  color: #28a745;
+  animation: priceChange 0.5s ease-in-out;
+}
+
+.price-card .price.down {
+  color: #dc3545;
+  animation: priceChange 0.5s ease-in-out;
+}
+
+.price-card .price.same {
+  color: #666;
+}
+
+.price-card .add-watchlist-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.price-card .add-watchlist-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Coin Details Logo */
+.coin-details .coin-logo {
+  width: 30px; /* Reduced from 40px */
+  height: 30px;
+}
+
+/* Post-Login Content */
+.post-login-content {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Pre-Login Animation */
+.pre-login-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+  z-index: 1000;
+}
+
+.logo-container {
+  text-align: center;
+  z-index: 2;
+}
+
+.brand-logo {
+  font-size: 6rem;
+  color: #f0b90b;
+  text-shadow: 0 0 20px rgba(240, 185, 11, 0.8);
+  animation: glow 2s ease-in-out infinite alternate, scale 3s ease-in-out infinite;
+}
+
+.tagline {
+  font-size: 2rem;
+  color: #fff;
+  animation: typeAndErase 6s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #f0b90b;
+}
+
+.crypto-orbits {
+  position: absolute;
+  width: 400px; /* Reduced from 500px to maintain proportionality */
+  height: 400px;
+  z-index: 1;
+}
+
+.orbit {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotate 10s linear infinite;
+}
+
+.orbit-1 {
+  animation-delay: 0s;
+}
+
+.orbit-2 {
+  animation-delay: 1s;
+}
+
+.orbit-3 {
+  animation-delay: 2s;
+}
+
+.orbit-4 {
+  animation-delay: 3s;
+}
+
+.orbit-5 {
+  animation-delay: 4s;
+}
+
+.crypto-icon {
+  position: absolute;
+  width: 40px; /* Reduced from 60px */
+  height: 40px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: spin3D 4s linear infinite, glow 2s ease-in-out infinite alternate;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.crypto-icon:hover {
+  transform: translateX(-50%) scale(1.3);
+  filter: brightness(1.5) drop-shadow(0 0 10px #f0b90b);
+}
+
+.wave-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(240, 185, 11, 0.3), rgba(240, 185, 11, 0.6), rgba(240, 185, 11, 0.3));
+  animation: wave 10s linear infinite;
+}
+
+.wave-2 {
+  animation-delay: 3s;
+  opacity: 0.7;
+}
+
+.wave-3 {
+  animation-delay: 6s;
+  opacity: 0.4;
+}
+
+.proceed-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #f0b90b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  animation: fadeIn 1s ease-in-out 4s forwards;
+  opacity: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.proceed-btn:hover {
+  background-color: #d4a017;
+  transform: scale(1.05);
+}
+
+.login-message {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(240, 185, 11, 0.5), 0 0 20px rgba(240, 185, 11, 0.3);
+    filter: brightness(1);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(240, 185, 11, 0.8), 0 0 40px rgba(240, 185, 11, 0.5);
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes typeAndErase {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin3D {
+  0% {
+    transform: translateX(-50%) rotateY(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotateY(360deg);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes flipIn {
+  0% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes priceChange {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 0;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .price-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 10px;
+  }
+
+  .price-card {
+    padding: 15px;
+  }
+
+  .price-card .coin-logo {
+    width: 25px; /* Reduced from 30px */
+    height: 25px;
+  }
+
+  .price-card h4 {
+    font-size: 1rem;
+  }
+
+  .price-card .price {
+    font-size: 1.2rem;
+  }
+
+  .pulse-btn,
+  .search-btn,
+  .proceed-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .brand-logo {
+    font-size: 4rem;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .crypto-orbits {
+    width: 250px; /* Reduced from 300px */
+    height: 250px;
+  }
+
+  .crypto-icon {
+    width: 30px; /* Reduced from 40px */
+    height: 30px;
+  }
+
+  .coin-details .coin-logo {
+    width: 25px; /* Reduced from 30px */
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-logo {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+  }
+
+  .crypto-orbits {
+    width: 200px; /* Reduced from 200px */
+    height: 200px;
+  }
+
+  .crypto-icon {
+    width: 25px; /* Reduced from 30px */
+    height: 25px;
+  }
+
+  .price-card .coin-logo {
+    width: 20px; /* Reduced from 25px */
+    height: 20px;
+  }
+
+  .coin-details .coin-logo {
+    width: 20px; /* Reduced from 25px */
+    height: 20px;
+  }
+}
+.demo-trading {
+  margin: 20px 0;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.demo-trading h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.trade-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.trade-input input {
+  padding: 8px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.trade-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buy-btn {
+  background: #28a745;
+  color: #fff;
+}
+
+.buy-btn:hover {
+  background: #218838;
+}
+
+.sell-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.sell-btn:hover {
+  background: #c82333;
+}
+
+.portfolio {
+  margin: 20px 0;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.portfolio ul {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.portfolio li {
+  margin: 5px 0;
+}
+
+.trade-history {
+  margin: 20px 0;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trade-history h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.trade-history ul {
+  list-style: none;
+  padding: 0;
+  color: #ccc;
+}
+
+.trade-history li {
+  margin: 5px 0;
+}

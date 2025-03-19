@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/auth"; // Adjust based on your backend
+const API_URL = "https://mern-gopi-7sxi.onrender.com/api/auth"; // Adjust based on your backend
 
 export const loginUser = async (credentials) => {
   try {

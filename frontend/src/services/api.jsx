@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // Ensure this matches your backend URL
+  baseURL: "https://mern-gopi-7sxi.onrender.com/api", // Ensure this matches your backend URL
   headers: {
     "Content-Type": "application/json",
   },

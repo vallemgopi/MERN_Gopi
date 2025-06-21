@@ -132,11 +132,3 @@ BinanceLens/
 - **Chart Page**  
   ![Chart Page](https://github.com/vallemgopi/MERN_Gopi/blob/main/chart.jpg)
 
-
-## Acknowledgments
-- [MERN Stack](https://www.mongodb.com/mern-stack) for a robust framework
-- [Binance API](https://www.binance.com/en/docs/exchange-api) for real-time market data
-- [Tailwind CSS](https://tailwindcss.com/) for modern, responsive styling
-
----
-**Contact**: For issues or inquiries, please open an issue on GitHub or reach out to the maintainers.

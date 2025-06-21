@@ -111,11 +111,7 @@ BinanceLens/
 3. Commit your changes: `git commit -m "Add your feature"`
 4. Push to the branch: `git push origin feature/your-feature`
 5. Submit a Pull Request.
-## Screenshots
-- **Home Page**: [image2.png](home.jpg)
-- **Login Page**: [image3.png](image3.png)
-- **Watchlist View**: [image4.png](image4.png)
-- **Dashboard**: [image5.png](image5.png)
+
 ## Screenshots
 - **Home Page**:[image2.png](home.jpg)
 - **Login Page**:[image3.png](login.jpg)

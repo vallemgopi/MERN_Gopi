@@ -113,10 +113,10 @@ BinanceLens/
 5. Submit a Pull Request.
 
 ## Screenshots
-- **Home Page**:[image2.png](home.jpg)
-- **Login Page**:[image3.png](login.jpg)
-- **Register**: [image4.png](register.jpg)
-- **trade**:[image5.png](trade.jpg)
+- **Home Page**:(https://github.com/vallemgopi/MERN_Gopi/blob/main/home.jpg)
+- **Login Page**:https://github.com/vallemgopi/MERN_Gopi/blob/main/login.jpg
+- **Register**:http://github.com/vallemgopi/MERN_Gopi/blob/main/portp.jpg
+- **trade**:https://github.com/vallemgopi/MERN_Gopi/blob/main/register.jpg
 
 ## Acknowledgments
 - [MERN Stack](https://www.mongodb.com/mern-stack) for a robust framework

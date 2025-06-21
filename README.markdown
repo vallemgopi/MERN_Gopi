@@ -117,10 +117,10 @@ BinanceLens/
 - **Watchlist View**: [image4.png](image4.png)
 - **Dashboard**: [image5.png](image5.png)
 ## Screenshots
-- **Home Page**:(home.jpg)
-- **Login Page**:(login.jpg)
-- **Register**: (register.jpg)
-- **Dashboard**: (image5.png)
+- **Home Page**:[image2.png](home.jpg)
+- **Login Page**:[image3.png](login.jpg)
+- **Register**: [image4.png](register.jpg)
+- **trade**:[image5.png](trade.jpg)
 
 ## Acknowledgments
 - [MERN Stack](https://www.mongodb.com/mern-stack) for a robust framework
